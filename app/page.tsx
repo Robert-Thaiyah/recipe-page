@@ -59,7 +59,7 @@ fillings. Let it cook for another minute, then slide it onto a plate.</li>
 
 
 <p className="">The table below shows nutritional values per serving without the additional fillings.</p>
-<div className="flex flex-col min-w-full inline-block align-middle">
+<div className="flex flex-col min-w-full inline-block align-middle relative">
 <table className="min-w-full p-5">
 
   <tbody className="">
