@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../public/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url(../public/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}

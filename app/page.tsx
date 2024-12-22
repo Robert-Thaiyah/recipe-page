@@ -1,101 +1,98 @@
-import Image from "next/image";
+import Image from 'next/image'
+import omlette from '../public/assets/images/image-omelette.jpeg'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className=" md:bg-rose-50 grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-1 md:pb-20 md:gap-16 md:p-8">
+      <main className="bg-white p-10 rounded-xl flex flex-col gap-8 row-start-2 items-center sm:items-start font-outfit">
+      <div className=''>
+       <Image priority src={omlette} alt='egg-omelette' className='md:rounded-xl rounded-none md:pt-0'/>
+      </div>
+      <h1 className="text-4xl font-bold text-rose-800 font-young">Simple Omelette Recipe</h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+<p className='text-slate-600 font-outfit'>
+  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+</p>
+<div className="w-full block p-6 bg-rose-50 rounded-lg">
+  <h2 className="font-bold text-rose-800 mb-5 text-lg">Preparation time</h2>
+  <div>
+    <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside">
+  <li> <strong>Total: </strong> Approximately 10 minutes</li>
+  <li> <strong>Preparation:</strong> 5 minutes</li>
+  <li> <strong>Cooking:</strong> 5 minutes</li>
+</ul>
+  </div>
+
+</div>
+
+
+<h3 className="text-3xl font-young text-rose-800">Ingredients</h3>
+<ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside marker:text-rose-800">
+  <li>2-3 large eggs</li>
+  <li>Salt, to taste</li>
+  <li>Pepper, to taste</li>
+  <li>1 tablespoon of butter or oil</li>
+  <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+</ul>
+
+<hr />
+
+<h3 className='font-young text-3xl text-rose-800'>Instructions</h3>
+
+<ol className="list-decimal marker:text-rose-800">
+  <li> <span className="font-bold">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+You can add a tablespoon of water or milk for a fluffier texture.</li>
+  <li> <span className="font-bold">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+  <li> <span className="font-bold">Cook the omelette:</span>
+ Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+the eggs evenly coat the surface.</li>
+  <li> <span className="font-bold">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+middle, sprinkle your chosen fillings over one half of the omelette.</li>
+  <li> <span className="font-bold">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+fillings. Let it cook for another minute, then slide it onto a plate.</li>
+  <li> <span className="font-bold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+</ol>
+
+<hr />
+<h3 className="text-3xl font-young text-rose-800">Nutrition</h3>
+
+
+<p className="">The table below shows nutritional values per serving without the additional fillings.</p>
+<div className="flex flex-col min-w-full inline-block align-middle">
+<table className="min-w-full p-5">
+
+  <tbody className="">
+    <tr className="border-b">
+      <td>Calories</td>
+      <td className='text-brown-800 font-bold'>277kcal</td>
+     
+    </tr>
+    <tr className="border-b">
+      <td>Carbs</td>
+      <td className='text-brown-800 font-bold'>0g</td>
+      
+    </tr>
+    <tr className="border-b">
+      <td>Protein</td>
+      <td className='text-brown-800 font-bold'>20g</td>
+      
+    </tr>
+    <tr className="">
+      <td>Fat</td>
+      <td className='text-brown-800 font-bold'>22g</td>
+      
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<div className="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Robert Kibue</a>.
+</div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
